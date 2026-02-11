@@ -42,9 +42,9 @@ docker run --rm -it \
 
 ```bash
 west build -b esp32s3_devkitc/esp32s3/procpu
+west build -b esp32s3_devkitc/esp32s3/procpu -p
 west flash
 west espressif monitor
-west build -b esp32s3_devkitc/esp32s3/procpu
 ```
 
 ---
