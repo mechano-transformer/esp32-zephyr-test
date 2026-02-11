@@ -45,6 +45,10 @@ west build -b esp32s3_devkitc/esp32s3/procpu
 west build -b esp32s3_devkitc/esp32s3/procpu -p
 west flash
 west espressif monitor
+
+
+# プログラムを消去
+esptool.py --chip esp32s3 --port /dev/ttyUSB0 erase_flash
 ```
 
 ---
